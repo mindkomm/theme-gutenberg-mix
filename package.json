@@ -1,0 +1,19 @@
+{
+  "name": "theme-gutenberg-mix",
+  "description": "An example for how to use Laravel Mix for Gutenberg development.",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions"
+  ],
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "laravel-mix": "^4.1.2"
+  }
+}
